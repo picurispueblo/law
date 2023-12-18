@@ -1,0 +1,50 @@
+{
+    "repositories": {
+        "picurispueblo/law-docs": {
+            "custom": {
+                "allow-unauthenticated-commits":true,
+                "serve":"latest",
+                "location_regex":"~/.*\\.pdf$"
+            }
+        },
+        "picurispueblo/law-xml": {
+            "custom": {
+                "type":"xml",
+                "allow-unauthenticated-commits":true,
+                "serve":"latest",
+                "serve-prefix":"_uncodified_xml"
+            }
+        },
+        "picurispueblo/law-rdf": {
+            "custom": {
+                "type":"rdf",
+                "serve":"historical",
+                "serve-prefix":"_rdf"
+            }
+        },
+        "picurispueblo/law-html": {
+            "custom": {
+                "preview":"https://github.com/picurispueblo/law-html-preview.git",
+                "type":"html",
+                "serve":"historical",
+                "location_regex":"/"
+            }
+        },
+        "picurispueblo/law-xml-codified": {
+            "custom": {
+                "preview":"https://github.com/picurispueblo/law-xml-codified-preview.git",
+                "type":"xml-codified",
+                "serve":"historical",
+                "serve-prefix":"_xml"
+            }
+        },
+        "picurispueblo/law-static-assets": {
+            "custom": {
+                "type":"static-assets",
+                "allow-unauthenticated-commits":true,
+                "serve":"latest",
+                "location_regex":"~.+(_document|_reader).+$"
+            }
+        }
+    }
+}
